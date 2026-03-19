@@ -72,7 +72,7 @@
 </div>
 
 <script>
-    let selectedGender = 1; // 1 = კაცი, 2 = ქალი
+    let selectedGender = 1;
 
     if (typeof cef !== 'undefined') {
         cef.on("showRegisterWindow", () => {
@@ -111,7 +111,6 @@
         
         errorBox.innerText = "ველოდებით სერვერის პასუხს...";
         
-        // === აი, ზუსტად აქ ზის ის კოდი, რომელზეც მეკითხებოდი ===
         if (typeof cef !== 'undefined') {
             cef.emit("cef_server_onRegisterInput", pass, mail, selectedGender);
         }
